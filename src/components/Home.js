@@ -26,13 +26,13 @@ function Home(){
     return (
         <div>
             <div className="searchBar" style={{padding: "20px"}}>
-                <input onKeyDown={shift} className="search" type="text" placeholder="Search" name="searchBar"/>
+                <input onKeyDown={shift} className="search w-50" type="text" placeholder="Search" name="searchBar"/>
             </div>
 
     
 
             <div className="container-fluid">
-                <div className="row" >
+                <div className="row justify-content-center" >
                     {(typeof info != 'undefined')? (
                     <Movie movies={info}/>):(
                     <h2>No result found. Please type again.</h2>
